@@ -24,9 +24,10 @@ instelation and run instructions:
       3.3 after i designed multiple function that calculate the path base on the parameters i mentioned i also made a curvature calculation function and i
           was ready to start to optimized.
       
-    4. i run a few expirements and succseed to upgrade the avarege curvature here are my results:
+  4. i run a few expirements and succseed to upgrade the avarege curvature here are my results:
 
-  (https://github.com/moranShavit/optimal_path/issues/1#issue-2709446510)
+  the center path before any optimization:
+  ![image alt](https://github.com/moranShavit/optimal_path/blob/main/center_path_2.0.png)
      
 
      the optimal avarage path: 
