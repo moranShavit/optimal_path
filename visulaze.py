@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from preprossec import path_df
 
-def plot_points(df, x_left_col, y_left_col, x_right_col, y_right_col, x_center_col, y_center_col, ratio, bias, curv):
+def plot_points(df, x_left_col, y_left_col, x_right_col, y_right_col, x_center_col, y_center_col, ratio, bias, curv, avg_curv):
     """
     Plots left, right, and center points on a 2D plane with lines connecting the points for each category.
 
@@ -44,7 +44,7 @@ def plot_points(df, x_left_col, y_left_col, x_right_col, y_right_col, x_center_c
     # Add labels, title, and legend
     plt.xlabel('X-axis')
     plt.ylabel('Y-axis')
-    plt.title(f'Parameters - ratio: {ratio} , bias : {bias}, curv_sum : {curv}')
+    plt.title(f'Parameters - ratio: {ratio} , bias : {bias}, curv_sum : {curv}, avg_curv : {avg_curv}')
     plt.legend(title='Category')
 
     # Show grid and plot

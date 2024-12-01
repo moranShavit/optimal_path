@@ -126,17 +126,16 @@ def calc_next_point(cur_p_x, cur_p_y, n_outer_border_p_x, n_outer_border_p_y, n_
         return x, y
     else:
         if distance(x,y,n_outer_border_p_x, n_outer_border_p_y) < distance(x,y,n_inner_border_p_x, n_inner_border_p_y):
-            x = n_outer_border_p_x*0.9 + n_inner_border_p_x*0.1
-            y = n_outer_border_p_y*0.9 + n_inner_border_p_y*0.1
+            x = n_outer_border_p_x*0.8 + n_inner_border_p_x*0.2
+            y = n_outer_border_p_y*0.8 + n_inner_border_p_y*0.2
         else:
-            x = n_inner_border_p_x*0.9 + n_outer_border_p_x*0.1
-            y = n_inner_border_p_y*0.9 + n_outer_border_p_y*0.1
+            x = n_inner_border_p_x*0.8 + n_outer_border_p_x*0.2
+            y = n_inner_border_p_y*0.8 + n_outer_border_p_y*0.2
     return x,y
 
 
 
 def calc_curvature(cur_p_x, cur_p_y, n_p_x, n_p_y, last_p_x, last_p_y):
-    def calc_curvature(cur_p_x, cur_p_y, n_p_x, n_p_y, last_p_x, last_p_y):
         """
         Calculates the curvature at a given point based on the tangent of the line between points and the slope
         of a line between the current point and the next point along the path.
@@ -169,16 +168,16 @@ def calc_curvature(cur_p_x, cur_p_y, n_p_x, n_p_y, last_p_x, last_p_y):
         - **Slope Between Points:** The slope between the current point and the next point is also calculated.
         - **Angle Difference:** The function returns the absolute difference between the angles of the two lines, which gives the curvature.
         """
-    next_inc = ((n_p_y - cur_p_y)/(n_p_x - cur_p_x ))
-    tangent = (cur_p_y - last_p_y) / (cur_p_x - last_p_x)
-    angle_radians_n_inc = math.atan(next_inc)
-    angle_radians_tangent = math.atan(tangent)
+        next_inc = ((n_p_y - cur_p_y)/(n_p_x - cur_p_x ))
+        tangent = (cur_p_y - last_p_y) / (cur_p_x - last_p_x)
+        angle_radians_n_inc = math.atan(next_inc)
+        angle_radians_tangent = math.atan(tangent)
 
-    # Convert the angle to degrees
-    angle_degrees_next_inc = math.degrees(angle_radians_n_inc)
-    angle_degrees_tangent = math.degrees(angle_radians_tangent)
+        # Convert the angle to degrees
+        angle_degrees_next_inc = math.degrees(angle_radians_n_inc)
+        angle_degrees_tangent = math.degrees(angle_radians_tangent)
 
-    return abs(angle_degrees_tangent - angle_degrees_next_inc)
+        return abs(angle_degrees_tangent - angle_degrees_next_inc)
 
 
 def calc_total_curvature(df, x_column, y_column):
@@ -213,12 +212,15 @@ def calc_total_curvature(df, x_column, y_column):
         If the DataFrame does not have sufficient rows to compute curvatures (fewer than two points).
     """
     total_curvature = 0
+    count = 0
     for i in range(2,len(df)-1):
         curv = abs((calc_curvature(df[x_column][i], df[y_column][i], df[x_column][i+1],
                                           df[x_column][i+1], df[x_column][i-1], df[y_column][i-1])))
         if curv > 0:
             total_curvature += curv
-    return total_curvature
+            count += 1
+    avg_curvature = total_curvature/count
+    return total_curvature, avg_curvature
 
 
 
