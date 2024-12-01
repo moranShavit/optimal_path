@@ -30,8 +30,8 @@ instelation and run instructions:
   ![image alt](https://github.com/moranShavit/optimal_path/blob/main/center_path_2.0.png)
      
 
-     the optimal avarage path: 
-     ![best_avg_curv](https://github.com/user-attachments/assets/350b689a-2b3c-41c0-a6b7-df51bb08a686)
+  the optimal avarage path: 
+     ![image alt](https://github.com/moranShavit/optimal_path/blob/main/best_avg_curv.png)
 
      as you can see its not smoth in all sections i think it could get better with more work on the next point calculation function
 
