@@ -26,8 +26,7 @@ instelation and run instructions:
       
     4. i run a few expirements and succseed to upgrade the avarege curvature here are my results:
 
-    the center path plot representing the start point of the path before any optimaztion:
-    ![center_path_plot](https://github.com/user-attachments/assets/1245df33-3541-4d68-b9aa-8d5bfb85c3ab)
+  (https://github.com/moranShavit/optimal_path/issues/1#issue-2709446510)
      
 
      the optimal avarage path: 
