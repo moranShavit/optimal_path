@@ -33,7 +33,7 @@ instelation and run instructions:
   the optimal avarage path: 
      ![image alt](https://github.com/moranShavit/optimal_path/blob/main/best_avg_curv.png)
 
-     as you can see its not smoth in all sections i think it could get better with more work on the next point calculation function
+  as you can see its not smoth in all sections i think it could get better with more work on the next point calculation function
 
   here you can see how change in the parameters afect the path and the avarage curvature:
      ![image alt](https://github.com/moranShavit/optimal_path/blob/main/smother_path.png)
