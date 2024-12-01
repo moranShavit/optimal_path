@@ -23,7 +23,7 @@ instelation and run instructions:
              the curvature is 0 so my secound parameter is the "ratio" that control on how weight to put on the tangent infferse to the next point
       3.3 after i designed multiple function that calculate the path base on the parameters i mentioned i also made a curvature calculation function and i
           was ready to start to optimized.
-
+      
     4. i run a few expirements and succseed to upgrade the avarege curvature here are my results:
 
     the center path plot representing the start point of the path before any optimaztion:
