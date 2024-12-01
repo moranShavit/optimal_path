@@ -38,7 +38,7 @@ instelation and run instructions:
   here you can see how change in the parameters afect the path and the avarage curvature:
      ![image alt](https://github.com/moranShavit/optimal_path/blob/main/smother_path.png)
 
-  to sum up, althogh the program is still not perfect i created a basic tool to optimaize pathes its modular so with a short pre process you can optimize any
+  to sum up, althogh the program is still not perfect i created a basic tool to optimaize pathes and its modular so with a short pre process you can optimize any
   track you would like.
 
   i used in pycharm de on windows 64 pc.
