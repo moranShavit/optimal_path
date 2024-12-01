@@ -35,14 +35,13 @@ instelation and run instructions:
 
      as you can see its not smoth in all sections i think it could get better with more work on the next point calculation function
 
-     here you can see how change in the parameters afect the path and the avarage curvature:
-     ![smother_path](https://github.com/user-attachments/assets/39c52675-5588-4c8e-a43c-56ce10ef8dd9)
+  here you can see how change in the parameters afect the path and the avarage curvature:
+     ![image alt](https://github.com/moranShavit/optimal_path/blob/main/smother_path.png)
 
+  to sum up, althogh the program is still not perfect i created a basic tool to optimaize pathes its modular so with a short pre process you can optimize any
+  track you would like.
 
-     to sum up, althogh the program is still not perfect i created a basic tool to optimaize pathes its modular so with a short pre process you can optimize any
-     track you would like.
-
-     i used in pycharm de on windows 64 pc.
+  i used in pycharm de on windows 64 pc.
 
       
 
